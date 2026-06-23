@@ -1,0 +1,204 @@
+/* إعادة ضبط بسيطة */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* تنسيق الصفحة بالكامل */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("background.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #333;
+}
+
+/* شريط التنقل */
+nav {
+    background-color: #222;
+    padding: 20px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+nav a:hover {
+    color: #00bfff;
+}
+
+/* القسم الرئيسي */
+header {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 40px;
+    color: white;
+}
+
+header h1 {
+    font-size: 40px;
+    max-width: 600px;
+    line-height: 1.5;
+}
+
+header img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+/* قسم About */
+#about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 20px;
+    text-align: center;
+    background-color: white;
+    gap: 50px;
+}
+
+#about p {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #1e3c72;
+}
+
+#about img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 0 50px #1e3c72;
+}
+
+#skills {
+    padding: 100px 20px;
+    background-color: #1e3c72;
+    text-align: center;
+}
+
+#skills h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+#skills ul {
+    display: inline-block;
+    text-align: left;
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+#work {
+    padding: 100px 20px;
+    background-color: #fcfdff;
+    text-align: center;
+}
+
+#work h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #1e3c72;
+}
+
+.project {
+    background-color: #1e3c72;
+    width: 350px;
+    margin: 20px auto;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+}
+
+.project h3 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.project p {
+    color: white;
+    line-height: 1.6;
+}
+
+#contact {
+    padding: 100px 20px;
+    background-color: #1e3c72;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #fcfdff;
+}
+
+#contact a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#contact a:hover {
+    color: #00bfff;
+}
+
+/* للأجهزة الصغيرة */
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    header img {
+        width: 220px;
+        height: 220px;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    #about {
+        flex-direction: column;
+    }
+}
